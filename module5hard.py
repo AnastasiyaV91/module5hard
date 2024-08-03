@@ -58,7 +58,7 @@ class UrTube:                                                           # Соз
         if not self.current_user:                                       # Если пользователь не зарегистрирован, выводим
             print("Войдите в аккаунт, чтобы смотреть видео")            # в консоль сообщение
             return
-        found_video = None
+        found_video = None                                              # Инициализация переменной для найденного видео 
         for video in self.videos:                                       # Если видео существует в списке и если есть
             if video.title == title:                                    # возврасное ограничение, проверяем возвраст
                 found_video = video                                     # пользователя
